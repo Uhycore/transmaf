@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <!-- Header -->
+    <include layout="@layout/layout_header" />
+
+    <!-- Konten Profil -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- Foto Profil -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_profile"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/profile_circle_bg"
+                android:padding="12dp" />
+
+            <!-- Nama -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aril Ganteng"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Jabatan -->
+            <TextView
+                android:id="@+id/tvPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lu Kan Anak IT"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Garis pembatas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginVertical="12dp" />
+
+            <!-- Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informasi Akun"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: arilmubi0@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Tombol Dummy (contoh aksi statis) -->
+<!--            <Button-->
+<!--                android:id="@+id/btnLogout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Keluar"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:backgroundTint="#E53935"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginBottom="32dp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <include layout="@layout/layout_footer_menu" />
+
+</LinearLayout>
