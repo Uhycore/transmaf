@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:paddingBottom="120dp"
+        android:layout_margin="16dp"
+        android:elevation="2dp">
+
+
+    <!-- =============== USER INFO CARD =============== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tujuan: Jakarta"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu: 2025-11-19 09:16 —"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kendaraan: Honda Supra X 125 2020"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blablba"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:textColor="#777"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+
+        <!-- =============== TIMELINE WRAPPER =============== -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- garis timeline -->
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#D1D5DB"
+                android:layout_marginStart="20dp" />
+
+            <!-- semua card -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- CARD 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_location_green"
+                        android:layout_marginStart="4dp"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/bg_card_white"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berangkat dari Balai"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#111"/>
+
+                        <TextView
+                            android:id="@+id/txtWaktuBerangkat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waktu: -"
+                            android:textSize="14sp"
+                            android:textColor="#666"
+                            android:layout_marginTop="4dp"/>
+
+
+                        <Button
+                            android:id="@+id/btnUpdateBerangkat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update Berangkat"
+                            android:textColor="#fff"
+                            android:backgroundTint="#1A73E8"
+                            android:layout_marginTop="12dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!-- CARD 2 (TIBA) -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_location_green"
+                        android:layout_marginStart="4dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/cardCameraResult"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_white"
+                        android:padding="16dp"
+                        android:layout_marginStart="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tiba di Tujuan"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#111"/>
+
+                        <TextView
+                            android:id="@+id/txtCameraTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waktu: -"
+                            android:textColor="#666"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+
+                        <ImageView
+                            android:id="@+id/imgCameraResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:background="#ccc"
+                            android:scaleType="centerCrop"/>
+
+                        <Button
+                            android:id="@+id/btnCameraFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ambil Foto"
+                            android:textColor="#fff"
+                            android:background="#222"
+                            android:layout_marginTop="12dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!-- CARD 3 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_location_green"
+                        android:layout_marginStart="4dp"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/bg_card_white"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sampai di Balai"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/txtWaktuSampai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waktu: -"
+                            android:textSize="14sp"
+                            android:textColor="#666"/>
+
+
+                        <Button
+                            android:id="@+id/btnSampaiBalai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selesai"
+                            android:textColor="#fff"
+                            android:backgroundTint="#1A73E8"
+                            android:layout_marginTop="12dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
