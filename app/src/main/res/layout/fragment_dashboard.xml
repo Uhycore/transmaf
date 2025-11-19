@@ -25,9 +25,24 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="160dp"
                 android:background="#E0E0E0"
                 android:gravity="center">
+=======
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/aril1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/profile_circle_bg"
+                    android:layout_marginEnd="10dp" />
+>>>>>>> f9208e6109b4bdc790e80b1f54d2f97eebcf17f8
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -118,6 +133,35 @@
                     android:paddingVertical="10dp" />
             </LinearLayout>
 
+<<<<<<< HEAD
+=======
+            <!-- Foto postingan -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aril1" />
+
+            <!-- Caption -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Hari ini ngoding dulu biar masa depan makin cerah! #codevibes #pranatakomputer"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Waktu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 jam yang lalu"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+>>>>>>> f9208e6109b4bdc790e80b1f54d2f97eebcf17f8
         </LinearLayout>
 
 
@@ -135,9 +179,24 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="160dp"
                 android:background="#E0E0E0"
                 android:gravity="center">
+=======
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/aril1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/profile_circle_bg"
+                    android:layout_marginEnd="10dp" />
+>>>>>>> f9208e6109b4bdc790e80b1f54d2f97eebcf17f8
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -228,7 +287,17 @@
                     android:paddingVertical="10dp" />
             </LinearLayout>
 
+<<<<<<< HEAD
         </LinearLayout>
+=======
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aril1" />
+>>>>>>> f9208e6109b4bdc790e80b1f54d2f97eebcf17f8
 
 
         <!-- ========================================================= -->
