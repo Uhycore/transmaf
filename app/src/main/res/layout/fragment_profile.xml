@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    android:background="#F0F2F5"
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <!-- ================= HEADER PROFIL PENGGUNA ================= -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#4C84FF">
+
+            <!-- Foto Profil -->
+            <ImageView
+                android:id="@+id/userPhoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:elevation="8dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#FFFFFF" />
+
+            <!-- Nama User -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_below="@id/userPhoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Nama Pengguna"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Status / Bio Singkat -->
+            <TextView
+                android:id="@+id/userBio"
+                android:layout_below="@id/userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="“Selalu belajar hal baru setiap hari.”"
+                android:textSize="15sp"
+                android:textColor="#E8F0FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <!-- GAP -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <!-- ================= DATA PENGGUNA PRIBADI ================= -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#FFFFFF">
+
+            <TextView
+                android:text="Informasi Pribadi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:text="• Nama: Maria\n• Umur: 23 Tahun\n• Jenis Kelamin: Perempuan\n• Kota Tinggal: Jakarta\n• Minat: Desain, Musik, Coding"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!-- ================= PENGATURAN AKUN ================= -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:text="Akun Pengguna"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:text="• Username: maria_user\n• Email: maria@example.com\n• No. HP: 0812-3456-7890\n• Bergabung: 12 Februari 2023"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!-- ================= PREFERENSI PENGGUNA ================= -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:text="Preferensi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:text="• Tema Aplikasi: Light Mode\n• Bahasa: Indonesia\n• Notifikasi: Aktif\n• Privasi: Publik"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout menuHistory = findViewById(R.id.menuHistory);
         LinearLayout menuProfile = findViewById(R.id.menuProfile);
 
-        // Default fragment (Dashboard)
+
         replaceFragment(new DashboardFragment());
 
         menuHome.setOnClickListener(v -> replaceFragment(new DashboardFragment()));
