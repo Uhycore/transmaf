@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.transmaf.DashboardActivity;
+import com.example.transmaf.MainActivity;
 import com.example.transmaf.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (username.equals("aril") && password.equals("12345678")) {
                     Toast.makeText(LoginActivity.this, "Login berhasil!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this, "Username atau password salah!", Toast.LENGTH_SHORT).show();
