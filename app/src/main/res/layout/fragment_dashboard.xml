@@ -2,28 +2,30 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA"
+    android:background="#F5F5F5"
     android:fillViewport="true">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- ====================== Post 1 ====================== -->
+        <!-- ========================================================= -->
+        <!-- CARD 1 -->
+        <!-- ========================================================= -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:padding="16dp"
             android:background="#FFFFFF"
-            android:padding="8dp"
-            android:elevation="2dp"
-            android:layout_marginBottom="12dp">
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
 
-            <!-- Header akun -->
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
@@ -36,16 +38,102 @@
                     android:scaleType="centerCrop"
                     android:background="@drawable/profile_circle_bg"
                     android:layout_marginEnd="10dp" />
+=======
+                android:layout_height="160dp"
+                android:background="#E0E0E0"
+                android:gravity="center">
+>>>>>>> 851739ee2d80f4bfc81da09de649809330c5e7d0
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="aril mubin"
+                    android:text="No Image"
+                    android:textColor="#9E9E9E"
                     android:textStyle="bold"
-                    android:textColor="#111111"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Honda Supra X 125"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motor · 2020"
+                    android:textSize="14sp"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚙️ Manual"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⛽ Bensin"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="# L 2448 GP"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔵 Biru"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan  →"
+                    android:backgroundTint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp" />
             </LinearLayout>
 
+<<<<<<< HEAD
             <!-- Foto postingan -->
             <ImageView
                 android:layout_width="match_parent"
@@ -72,19 +160,26 @@
                 android:text="2 jam yang lalu"
                 android:textColor="#999999"
                 android:textSize="12sp" />
+=======
+>>>>>>> 851739ee2d80f4bfc81da09de649809330c5e7d0
         </LinearLayout>
 
-        <!-- ====================== Post 2 (duplikat) ====================== -->
+
+        <!-- ========================================================= -->
+        <!-- CARD 2 -->
+        <!-- ========================================================= -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:padding="16dp"
             android:background="#FFFFFF"
-            android:padding="8dp"
-            android:elevation="2dp">
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
@@ -97,16 +192,102 @@
                     android:scaleType="centerCrop"
                     android:background="@drawable/profile_circle_bg"
                     android:layout_marginEnd="10dp" />
+=======
+                android:layout_height="160dp"
+                android:background="#E0E0E0"
+                android:gravity="center">
+>>>>>>> 851739ee2d80f4bfc81da09de649809330c5e7d0
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="aril mubin"
+                    android:text="No Image"
+                    android:textColor="#9E9E9E"
                     android:textStyle="bold"
-                    android:textColor="#111111"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yamaha NMax 155"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motor · 2021"
+                    android:textSize="14sp"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚙️ Automatic"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⛽ Bensin"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="# L 3209 UB"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚪ Putih"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan  →"
+                    android:backgroundTint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp" />
             </LinearLayout>
 
+<<<<<<< HEAD
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -114,22 +295,118 @@
                 android:layout_marginBottom="8dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/aril1" />
+=======
+        </LinearLayout>
+>>>>>>> 851739ee2d80f4bfc81da09de649809330c5e7d0
 
-            <TextView
+
+        <!-- ========================================================= -->
+        <!-- CARD 3 -->
+        <!-- ========================================================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#E0E0E0"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Image"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="📸 Dokumentasi CCTV ruang kerja setelah update sistem monitoring."
-                android:textColor="#333333"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp" />
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kemarin"
-                android:textColor="#999999"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suzuki Ertiga GX"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobil · 2019"
+                    android:textSize="14sp"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🛞 Manual"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⛽ Bensin"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="# L 9890 AL"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔴 Merah"
+                        android:background="#EEEEEE"
+                        android:textColor="#444"
+                        android:padding="6dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan  →"
+                    android:backgroundTint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
