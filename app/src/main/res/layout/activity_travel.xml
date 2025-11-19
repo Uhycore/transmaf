@@ -1,26 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F9FAFB">
 
+    <!-- HEADER FIX -->
     <include layout="@layout/layout_header" />
 
-    <ScrollView
+    <!-- FRAGMENT AMBIL RUANG PENUH (TANPA SCROLLVIEW) -->
+    <FrameLayout
+        android:id="@+id/containerTravel"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp"
-        android:background="#FFFFFF">
+        android:background="#F9FAFB"/>
 
-        <TextView
-            android:id="@+id/tvResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mengambil data..."
-            android:textSize="16sp"
-            android:textColor="#000000" />
-    </ScrollView>
-
+    <!-- FOOTER FIX -->
     <include layout="@layout/layout_footer_menu" />
+
 </LinearLayout>
