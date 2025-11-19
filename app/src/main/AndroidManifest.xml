@@ -14,10 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Transmaf">
         <activity android:name=".MainActivity" />
-        <activity android:name=".TravelActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".HistoryActivity" />
-        <activity android:name=".DashboardActivity" />
         <activity android:name=".auth.RegisterActivity" />
         <activity android:name=".auth.LoginActivity"
             android:exported="true">
