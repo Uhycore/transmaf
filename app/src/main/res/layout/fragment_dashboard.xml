@@ -32,7 +32,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/aril"
+                    android:src="@drawable/aril1"
                     android:scaleType="centerCrop"
                     android:background="@drawable/profile_circle_bg"
                     android:layout_marginEnd="10dp" />
@@ -53,7 +53,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/aril" />
+                android:src="@drawable/aril1" />
 
             <!-- Caption -->
             <TextView
@@ -93,7 +93,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/aril"
+                    android:src="@drawable/aril1"
                     android:scaleType="centerCrop"
                     android:background="@drawable/profile_circle_bg"
                     android:layout_marginEnd="10dp" />
@@ -113,7 +113,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/aril" />
+                android:src="@drawable/aril1" />
 
             <TextView
                 android:layout_width="match_parent"
