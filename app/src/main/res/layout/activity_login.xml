@@ -72,9 +72,8 @@
 
             <!-- USERNAME -->
             <EditText
-                android:id="@+id/etUsername"
-                android:hint="Username"
-                android:inputType="textEmailAddress"
+                android:id="@+id/etLogin"
+                android:hint="Username/Email"
                 android:background="@drawable/input_field"
                 android:padding="14dp"
                 android:textColor="#333333"
@@ -103,8 +102,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
+
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnGoRegister"
                 android:text="Daftar"
                 android:background="@drawable/btn_outline_green"
                 android:textColor="#FFFFFF"
