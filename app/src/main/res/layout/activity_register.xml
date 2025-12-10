@@ -54,7 +54,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etNewUsername"
+                android:id="@+id/etName"
                 android:hint="Nama Pengguna"
                 android:padding="14dp"
                 android:background="@drawable/input_modern"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
-                android:id="@+id/etNewEmail"
+                android:id="@+id/etEmail"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:padding="14dp"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
-                android:id="@+id/etNewPassword"
+                android:id="@+id/etPassword"
                 android:hint="Kata Sandi"
                 android:inputType="textPassword"
                 android:padding="14dp"
@@ -82,17 +82,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <EditText
-                android:id="@+id/etConfirmPassword"
-                android:hint="Konfirmasi Kata Sandi"
-                android:inputType="textPassword"
-                android:padding="14dp"
-                android:background="@drawable/input_modern"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <Button
-                android:id="@+id/btnSave"
+                android:id="@+id/btnRegister"
                 android:text="Daftar Sekarang"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -100,6 +91,15 @@
                 android:layout_marginTop="22dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
         </LinearLayout>
 
         <!-- FOOTER -->
